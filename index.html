@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Interactive pricing component</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1 class="text-clr-neutral-dark-blue fw-bold fs-500">
+        Simple, traffic-based pricing
+      </h1>
+      <p class="text-clr-neutral-grayish-blue fs-300">
+        Sign-up for out 30-day trial. No credit card required.
+      </p>
+    </header>
+    <main>
+      <div class="counter-wrapper">
+        <div class="counter">
+          <p class="pageviews-output | text-clr-neutral-grayish-blue">
+            100K PAGEVIEWS
+          </p>
+          <div class="even-columns align-center">
+            <p class="price-output | text-clr-neutral-dark-blue fw-bold fs-600">
+              $16.00
+            </p>
+            <span class="text-clr-neutral-grayish-blue">/ month</span>
+          </div>
+          <div class="range-wrapper | position-relative">
+            <input id="rangeSlider" type="range" min="0" max="100" step="25" />
+          </div>
+        </div>
+        <div class="toggle-wrapper | even-columns align-center jc-center">
+          <p class="text-clr-neutral-grayish-blue">Monthly Billing</p>
+          <button class="toggle | position-relative" aria-pressed="false">
+            <div class="toggle-inner"></div>
+          </button>
+          <div class="position-relative">
+            <p class="text-clr-neutral-grayish-blue">Yearly Billing</p>
+            <span class="discount-label | text-clr-primary-light-red fw-bold"
+              >25%</span
+            >
+          </div>
+        </div>
+      </div>
+      <div class="info-wrapper">
+        <ul class="benefits-list">
+          <li class="text-clr-neutral-grayish-blue">Unlimited websites</li>
+          <li class="text-clr-neutral-grayish-blue">100% data ownership</li>
+          <li class="text-clr-neutral-grayish-blue">Email reports</li>
+        </ul>
+        <button class="button">Start my trial</button>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
